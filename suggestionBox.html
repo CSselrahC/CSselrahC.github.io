@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title> Suggestion Box </title>
-</head>
-
-<body>
-
-<h2>Suggestion Box</h2>
-
-<form action="suggestionBoxRedirect.html">
-  <label for="concerns">Please enter any suggestions you might have in the box below. You may also send your concerns, criticisms, and/or complaints.</label><br>
-  <input type="text" id="fname" name="fname" value="Enter text here"><br>
-  <br>
-  <input type="submit" value="Submit">
-</form>
-
-<p>Click the "Submit" button to send your message to us.</p>
-
-</body>
-</html>
+	<html>
+		<head>
+			<title> Suggestion Box </title>
+			<link rel="stylesheet" href="CSS/suggestionBoxcss.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+		</head>
+		
+		<body>
+			<h2>Suggestion Box</h2>
+			
+			<form action="suggestionBoxRedirect.html">
+				<label for="concerns">Please enter any suggestions you might have in the box below. You may also send your concerns, criticisms, and/or complaints.</label><br>
+				<textarea type="text" id="fname" name="fname" placeholder="Enter text here" style="height:200px"></textarea><br>
+				<br>
+				<input type="submit" value="Submit" class="button">
+			</form>
+			
+			<p>Click the "Submit" button to send your message to us.</p>
+		</body>
+		<script = src="JS/suggestionBoxjs.js"></script>
+	</html>
