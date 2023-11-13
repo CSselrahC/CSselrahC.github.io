@@ -1,2 +1,2 @@
 # CSselrahC.github.io
-git
+just trying to learn how to use GitHub
