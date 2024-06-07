@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>FoodFiesta Account</title>
+		<link rel="stylesheet" href="css/cssLogInSignUp.css">
+		<meta content="width=device-width, initial-scale=1" name="viewport">
+	</head>
+	
+	<body>
+		<div class="overlay"></div>
+		
+		<nav id="myHeader">
+			<div class="header">
+				<a href="#" onclick="showSidebar()"><img src="icons/menu.svg"></a>
+				<a href="ecommerce.html">FoodFiesta</a>
+			</div>
+			
+			
+			<div class="sidebar">
+				<div class="sidebarLogo">
+					<a href="#" onclick="hideSidebar()"><img src="icons/menu.svg"></a>
+					<a href="#">FoodFiesta</a>
+				</div>
+				<div class="sidebarItems">
+					<a href="ecommerce.html">Home</a>
+					<a href="orderPage.html">Order Now</a>
+					<a href="#">try</a>
+					<a href="#">try</a>
+				</div>
+			</div>
+		</nav>
+		
+		<div id="LogIn" style="display: block;">
+			<h1> Log In </h1>
+			<p> Log In your credentials below to access your account. </p>
+			
+			<form name="logInForm" action="errorPage.html" onsubmit="return validateForm()">
+				<label for="emailLogIn">Email:</label><br>
+				<input type="text" id="email" name="emailLogIn" placeholder="Email" autocomplete="off">
+				<p id="emailErrorMessage">*Email is required</p>
+				<br>
+				
+				<label for="passwordLogIn">Password:</label><br>
+				<input type="password" id="password" name="passwordLogIn" placeholder="Password" autocomplete="off">
+				<p onclick="passwordVisibility()" id="visibilityOfPassword">Show Password</p>
+				
+				
+				<p id="passwordErrorMessage">*Password is required</p>
+				<br>
+				
+				<input type="submit" value="Submit">
+				<p id="LogInSignUpSwitch" onclick="switchLogInSignUp()"> No account? Sign Up instead! </p>
+			</form>
+		</div>
+		
+		<div id="SignUp" style="display: none;">
+			<h1> Sign Up </h1>
+			<p> Enter your credentials below to Sign Up. </p>
+			
+			<form name="signUpForm" action="errorPage.html" onsubmit="return validateFormSignUp()">
+				<label for="nameSignUp">Name:</label><br>
+				<input type="text" id="nameSignUp" name="nameSignUp" placeholder="Complete Name" autocomplete="off">
+				<p id="nameErrorMessageSignUp">*Complete Name is required</p>
+				
+				<label for="emailSignUp">Email:</label><br>
+				<input type="text" id="emailSignUp" name="emailSignUp" placeholder="Email" autocomplete="off">
+				<p id="emailErrorMessageSignUp">*Email is required</p>
+				
+				<label for="passwordSignUp">Password:</label><br>
+				<input type="password" id="passwordSignUp" name="passwordSignUp" placeholder="Password" autocomplete="off">
+				<p onclick="passwordVisibilitySignUp()" id="visibilityOfPasswordSignUp">Show Password</p>
+				<p id="passwordErrorMessageSignUp">*Password is required</p><br>
+				
+				<label for="confirmPasswordSignUp">Confirm Password:</label><br>
+				<input type="password" id="confirmPasswordSignUp" name="confirmPasswordSignUp" placeholder="Confirm Password" autocomplete="off">
+				<p onclick="confirmPasswordVisibilitySignUp()" id="visibilityOfConfirmPasswordSignUp">Show Password</p>
+				<p id="confirmPasswordErrorMessageSignUp">*Password is required</p>
+				
+				<input type="submit" value="Submit">
+			<p id="LogInSignUpSwitch" onclick="switchLogInSignUp()"> Already have an account? Log In instead! </p>
+		</div>
+		
+		<script src="js/jsLogInSignUp.js"></script>
+	</body>
+</html>

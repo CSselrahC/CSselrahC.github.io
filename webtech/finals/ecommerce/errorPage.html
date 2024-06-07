@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>FoodFiesta</title>
+		<link rel="stylesheet" href="css/cssErrorPage.css">
+		<meta content="width=device-width, initial-scale=1" name="viewport">
+	</head>
+	
+	<body>
+		<div class="overlay"></div>
+		
+		<nav id="myHeader">
+			<div class="header">
+				<a href="#" onclick="showSidebar()"><img src="icons/menu.svg"></a>
+				<a href="ecommerce.html">FoodFiesta</a>
+				<a href="orderPage.html">Order Now</a>
+				<a href="aboutPage.html">About Us</a>
+				<a href="LogInSignUpPage.html">Log In | Sign Up</a>
+			</div>
+			
+			<div class="sidebar">
+				<div class="sidebarLogo">
+					<a href="#" onclick="hideSidebar()"><img src="icons/menu.svg"></a>
+					<a href="#">FoodFiesta</a>
+				</div>
+				<div class="sidebarItems">
+					<a href="orderPage.html">Order Now</a>
+					<a href="#">try</a>
+					<a href="#">try</a>
+					<a href="aboutPage.html">About Us</a>
+				</div>
+			</div>
+		</nav>
+		
+		<div id="errorMessage1">
+			<h1> 500 Internal Server Error </h1>
+			<p> The server encountered an internal error or misconfiguration and was unable to complete your request </p>
+			<br>
+			<p> Please contact the server administrator at charlesserranocarreon@gmail.com
+			and inform the administrator of the time this error occured, and the actions you performed just before this error. </p>
+			
+			<br>
+			<br>
+			<br>
+			
+			<img src="images/dogeza_businessman.png" id="dogeza">
+			<p style="text-align: center;"> Sorry, it's not you, it's us </p>
+			
+			<div style="text-align: center;">
+				<a href="ecommerce.html" id="homePageButton">Back to Home Page</a>
+			</div>
+		</div>
+		
+		<script src="js/jsErrorPage.js"></script>
+	</body>
+</html>

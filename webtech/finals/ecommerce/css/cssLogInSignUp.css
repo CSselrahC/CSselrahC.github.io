@@ -1,0 +1,266 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Trebuchet MS', sans-serif;
+}
+
+body {
+	background-color: #B90E0A;
+	background-image: url("../images/foodFiestaBackground.png");
+	background-size: 150px;
+	background-repeat: repeat;
+	margin: 0;
+	min-height: 100vh;
+}
+
+/* header */
+.sticky {
+	position: sticky;
+	top: 0;
+}
+
+nav {
+	background-color: #FFFFFF;
+	box-shadow: 3px 3px 5px rgba (0, 0, 0, 0.1);
+	padding: 10px 16px;
+	background: #231709;
+	color: #f1f1f1;
+	position: sticky;
+}
+
+.header {
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 50px;
+}
+
+nav a {
+	height: 100%;
+	padding: 0 30px;
+	text-decoration: none;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
+	font-size: 16px;
+	transition-duration: 0.3s;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	position: relative;
+	color: #FFFFFF;
+}
+
+.header a:hover {
+	color: #FFFFFF;
+	background-color: #37240e;
+}
+
+.header a:nth-child(3) {
+	color: #231709;
+	background-color: #FFA500;
+	border-radius: 50px;
+	margin-right: 5px;
+}
+
+.header a:nth-child(3):hover {
+	background-color: #FF0000;
+	margin-right: 5px;
+}
+
+.header a:nth-child(n+4):hover {
+	color: #231709;
+	background-color: #FFFFFF;
+}
+
+.header a:nth-child(2) {
+	margin-right: auto;
+}
+
+/* sidebar */
+.sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 250px;
+	z-index: 3;
+	background-color: rgba(255, 255, 255, 0.2);
+	box-shadow: 10px 0 100px rgba(0, 0, 0, 0.5);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	flex: 100%;
+	backdrop-filter: blur(10px);
+	text-align: center;
+	transition: 1.2s cubic-bezier(.36,-0.01,0,.77);
+	margin-left: -360px;
+}
+
+.sidebar.closed {
+	margin-left: 0px;
+}
+
+.overlay{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: calc(100vw - (100vw - 100%));
+	background-color: rgba(0,0,0,0.5);
+	display: none;
+}
+
+.overlay.closed {
+	display: block;
+}
+
+.sidebarLogo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.sidebar a {
+	height: 50px;
+	width: 190px;
+}
+
+.sidebarItems a:hover {
+	color: #231709;
+	background-color: #FFFFFF;
+}
+
+/* Log In DIV */
+#LogIn {
+	background-color: #FFE66D;
+	border: 15px solid #FFB204;
+	padding: 50px;
+	padding-right: 20px;
+	padding-top: 20px;
+	margin: 20px;
+	max-width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1000px;
+	min-width: 350px;
+	height: 700px;
+	line-height: 1.8;
+}
+
+	/*Email, Password */
+input, select {
+	max-width: 970px;
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: none;
+	border-bottom: 2px solid #FFA500;
+	background-color: #FFE66D;
+	display: inline-block;
+}
+
+::placeholder {
+	color: #CC5500;
+	font-size: 15px;
+}
+
+input:focus {
+	outline: none;
+	border-bottom: 2px solid #FF0000;
+}
+
+	/* Email */
+#emailErrorMessage {
+	visibility: hidden;
+	font-size: 15px;
+	color: #FF0000;
+	margin-top: -5px;
+}
+
+	/* Password */
+#passwordErrorMessage {
+	visibility: hidden;
+	font-size: 15px;
+	color: #FF0000;
+	margin-top: -5px;
+}
+
+#visibilityOfPassword {
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+
+#password {
+	padding-right: 30px;
+}
+
+	/* Submit Button */
+input[type=submit] {
+	max-width: 970px;
+	width: 100%;
+	background-color: #FFA500;
+	color: black;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: #FF0000;
+	color: #FFFFFF;
+}
+
+#LogInSignUpSwitch:hover {
+	color: #0000FF;
+}
+
+#SignUp {
+	background-color: #FFE66D;
+	border: 15px solid #FFB204;
+	padding: 50px;
+	padding-right: 20px;
+	padding-top: 20px;
+	margin: 20px;
+	max-width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1000px;
+	min-width: 350px;
+	height: 700px;
+	line-height: 1.8;
+}
+
+#nameErrorMessageSignUp {
+	visibility: hidden;
+	font-size: 15px;
+	color: #FF0000;
+	margin-top: -5px;
+}
+	
+#emailErrorMessageSignUp {
+	visibility: hidden;
+	font-size: 15px;
+	color: #FF0000;
+	margin-top: -5px;
+}
+
+	/* Password */
+#passwordErrorMessageSignUp {
+	visibility: hidden;
+	font-size: 15px;
+	color: #FF0000;
+	margin-top: -5px;
+}
+
+#confirmPasswordErrorMessageSignUp {
+	visibility: hidden;
+	font-size: 15px;
+	color: #FF0000;
+	margin-top: -5px;
+}

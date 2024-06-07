@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>FoodFiesta</title>
+		<link rel="stylesheet" href="css/cssOrderPage.css">
+		<meta content="width=device-width, initial-scale=1" name="viewport">
+	</head>
+	
+	<body>
+		<div class="overlay"></div>
+		
+		<nav id="myHeader">
+			<div class="header">
+				<a href="#" onclick="showSidebar()"><img src="icons/menu.svg"></a>
+				<a href="ecommerce.html">FoodFiesta</a>
+				<a href="errorPage.html" id="shoppingCart">
+					<img src="icons/shoppingCartBlack.svg" class="shoppingCartHover1">
+					<img src="icons/shoppingCartWhite.svg" class="shoppingCartHover2">
+					<div id="cartNumber">
+						<p>0</p>
+					</div>
+				</a>
+				<a href="aboutPage.html">About Us</a>
+				<a href="LogInSignUpPage.html">Log In | Sign Up</a>
+			</div>
+			
+			
+			<div class="sidebar">
+				<div class="sidebarLogo">
+					<a href="#" onclick="hideSidebar()"><img src="icons/menu.svg"></a>
+					<a href="#">FoodFiesta</a>
+				</div>
+				<div class="sidebarItems">
+					<a href="ecommerce.html">Home</a>
+					<a href="#">try</a>
+					<a href="#">try</a>
+					<a href="aboutPage.html">About Us</a>
+				</div>
+			</div>
+		</nav>
+		
+		<div id="foods">
+			<h3> Main Dish </h3>
+			<br><br>
+			
+			<div class="availableFoods">
+				<p> Pizza </p>
+				<img src="images/pizza.png" class="foodPictures">
+				<div class="addToCartButtons">
+					<button class="foodButton" onclick="addToCart()">+</button>
+				</div>
+			</div>
+			<br><br>
+			
+			<div class="availableFoods">
+				<p> Burger </p>
+				<img src="images/burger.png" class="foodPictures">
+				<div class="foodButtons">
+					<button class="foodButton" onclick="addToCart()">+</button>
+				</div>
+			</div>
+			<br><br>
+			
+			<div class="availableFoods">
+				<p> Fried Chicken with Rice </p>
+				<img src="images/friedChicken.png" class="foodPictures">
+				<div class="foodButtons">
+					<button class="foodButton" onclick="addToCart()">+</button>
+				</div>
+			</div>
+			<br><br>
+			
+			<div class="availableFoods">
+				<p> Carbonara </p>
+				<img src="images/carbonara.png" class="foodPictures">
+				<div class="foodButtons">
+					<button class="foodButton" onclick="addToCart()">+</button>
+				</div>
+			</div>
+			<br><br>
+			
+			<div class="availableFoods">
+				<p> Spaghetti </p>
+				<img src="images/spaghetti.png" class="foodPictures">
+				<div class="foodButtons">
+					<button class="foodButton" onclick="addToCart()">+</button>
+				</div>
+			</div>
+			<br><br>
+			
+			<div class="availableFoods">
+				<p> Lasagna </p>
+				<img src="images/lasagna.png" class="foodPictures">
+				<div class="foodButtons">
+					<button class="foodButton" onclick="addToCart()">+</button>
+				</div>
+			</div>
+			<br><br>
+			
+			<h3> Side Dish </h3>
+			<br><br>
+			
+			<div class="availableFoods">
+				<p> Pizza </p>
+			</div>
+			<br><br>
+			
+			<div class="availableFoods">
+				<p> Pizza </p>
+			</div>
+			<br><br>
+			
+			<div class="availableFoods">
+				<p> Pizza </p>
+			</div>
+			<br><br>
+			
+			<div class="availableFoods">
+				<p> Pizza </p>
+			</div>
+			<br><br>
+			
+			<div class="availableFoods">
+				<p> Pizza </p>
+			</div>
+			<br><br>
+			
+			<div class="availableFoods">
+				<p> Pizza </p>
+			</div>
+			<br><br>
+		
+		</div>
+		
+		<script src="js/jsOrderPage.js"></script>
+	</body>
+</html>
