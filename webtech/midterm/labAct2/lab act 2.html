@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Charles S. Carreon</title>
+		<style>
+			body {
+				background: #1c2e4a;
+				font-family: 'Helvetica', sans-serif;
+				color: #fff;
+			}
+			
+			body.second {
+				background: #01213d;
+				font-family: 'Helvetica', sans-serif;
+				color: #fff;
+			}
+			
+			#photoID {
+				display: none;
+			}
+			
+			#photo {
+				position: absolute;
+				left:1250px;
+				top:250px;
+			}
+			
+			#text {
+				font-size: 40px;
+				position: absolute;
+				left:500px;
+				top:300px;
+			}
+			
+			.buttonColor {
+				background-color: #008B8B;
+				color: white;
+				padding: 15px 32px;
+				border: none;
+				cursor: pointer;
+			}
+			
+			.topDesign {
+				background-color: lightblue;
+				color:black;
+			}
+			
+			.topDesign2 {
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+	
+	<div class="topDesign">
+		<div class="topDesign2">
+			<br>
+			<h1>Charles S. Carreon</h1>
+			<h3>BSCS Student</h3>
+		</div>
+		<button onclick="photoPos()" class="buttonColor">About Me</button>
+	</div>
+	
+	<div id="text">
+		<p>Hi! I am Charles S. Carreon. </p>
+		<p> This is my homepage.</p>
+	</div>
+	<img src="charles001_sq.png" alt="picture na pogi" style="width:15%" id="photo">
+	<p id="photoID">right</p>
+	
+	<script>
+		<!-- photo and text -->
+		let photo = document.getElementById("photo");
+		let textEdit = document.getElementById("text");
+		let content = document.getElementsByTagName("body") [0];
+		
+		function photoPos() {
+			if (photoID.innerHTML == 'right' ) {
+				photoID.innerHTML = 'left'
+				document.getElementById("photo").style.left=250 + "px";
+				document.getElementById("text").style.left=600 + "px";
+				document.getElementById("text").style.top=250 + "px";
+				textEdit.innerHTML = '<p> <span style="color:#008B8B"> Name: </span> Charles Serrano Carreon </p> <p> <span style="color:#008B8B"> Birthday: </span> September 6, 2004 </p> <p> <span style="color:#008B8B"> Age: </span> 19 </p>';
+				content.classList.toggle("second");
+			}
+
+			else if (photoID.innerHTML == 'left' ){
+				photoID.innerHTML = 'right'
+				document.getElementById("photo").style.left=1250 + "px";
+				document.getElementById("text").style.left=500 + "px";
+				document.getElementById("text").style.top=300 + "px";
+				textEdit.innerHTML = '<p>Hi! I am Charles S. Carreon.</p> <p>This is my homepage.</p>';
+				content.classList.toggle("second");
+			}
+		}
+		
+	</script>
+	
+	</body>
+</html>
