@@ -180,14 +180,14 @@
 		display: inline;
 		font-size: 15px;
 		font-family: 'Century Gothic', sans-serif;
-		color: A00000;
+		color: #FF0000;
 	}
 	
 	#infoColor2 {	
 		display: inline;	
 		font-size: 15px;
 		font-family: 'Century Gothic', sans-serif;
-		color: 999999;
+		color: #808080;
 	}
 	
 	/* social media logos */
