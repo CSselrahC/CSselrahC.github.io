@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>FoodFiesta</title>
+		<link rel="stylesheet" href="css/cssOrderPage.css">
+		<meta content="width=device-width, initial-scale=1" name="viewport">
+	</head>
+	
+	<body>
+		<div class="overlay"></div>
+		
+		<nav id="myHeader">
+			<div class="header">
+				<a href="#" onclick="showSidebar()"><img src="icons/menu.svg"></a>
+				<a href="ecommerce.html">FoodFiesta</a>
+				<a href="errorPage.html" id="shoppingCart">
+					<img src="icons/shoppingCartBlack.svg" class="shoppingCartHover1">
+					<img src="icons/shoppingCartWhite.svg" class="shoppingCartHover2">
+					<div id="cartNumber">
+						<p>0</p>
+					</div>
+				</a>
+				<a href="aboutPage.html">About Us</a>
+				<a href="LogInSignUpPage.html">Log In | Sign Up</a>
+			</div>
+			
+			
+			<div class="sidebar">
+				<div class="sidebarLogo">
+					<a href="#" onclick="hideSidebar()"><img src="icons/menu.svg"></a>
+					<a href="#">FoodFiesta</a>
+				</div>
+				<div class="sidebarItems">
+					<a href="ecommerce.html">Home</a>
+					<a href="aboutPage.html">About Us</a>
+					<a href="LogInSignUpPage.html">Log In | Sign Up</a>
+				</div>
+			</div>
+		</nav>
+		
+		<div id="foods">
+			<h3> Main Dish </h3>
+			<br><br>
+			
+			<div class="availableFoods">
+				<h3> Pizza </h3> <br>
+				<div class="foodContent2">
+					<img src="images/pizza.png" class="foodPictures">
+					<div class="foodContent">
+						<h3> 8 slices of our cheesy and meaty Pepperoni Pizza. Good for the family or friends. </h3>
+						<br>
+						<p style="text-decoration: line-through;"> P499 </p> <h2> P349 </h2>
+						<br>
+						<button class="foodButton" onclick="addToCart()">Order</button>
+					</div>
+				</div>
+			</div>
+			<br><br>
+			
+			<div class="availableFoods">
+				<h3> Burger </h3> <br>
+				<div class="foodContent2">
+					<img src="images/burger.png" class="foodPictures">
+					<div class="foodContent">
+						<h3> High quality beef, delicious cheese, fresh lettuce and tomatoes, with a bun and sesame seeds. 
+							<br> A full meal good for 1 person.
+						</h3>
+						<br>
+						<h2> P149 </h2>
+						<br>
+						<button class="foodButton" onclick="addToCart()">Order</button>
+					</div>
+				</div>
+			</div>
+			<br><br>
+			
+			<div class="availableFoods">
+				<h3> Fried Chicken with Rice </h3> <br>
+				<div class="foodContent2">
+					<img src="images/friedChicken.png" class="foodPictures">
+					<div class="foodContent">
+						<h3> Crispy and juicy fried chicken, coupled with white rice and gravy. Good for 1 person. </h3>
+						<br>
+						<h2> P149 </h2>
+						<br>
+						<button class="foodButton" onclick="addToCart()">Order</button>
+					</div>
+				</div>
+			</div>
+			<br><br>
+			
+			<div class="availableFoods">
+				<h3> Carbonara </h3> <br>
+				<div class="foodContent2">
+					<img src="images/carbonara.png" class="foodPictures">
+					<div class="foodContent">
+						<h3> Creamy cheesy carbonara filled with bacon bits. Perfect for 2 people. </h3>
+						<br>
+						<h2> P149 </h2>
+						<br>
+						<button class="foodButton" onclick="addToCart()">Order</button>
+					</div>
+				</div>
+			</div>
+			<br><br>
+			
+			<div class="availableFoods">
+				<h3> Spaghetti </h3> <br>
+				<div class="foodContent2">
+					<img src="images/spaghetti.png" class="foodPictures">
+					<div class="foodContent">
+						<h3> A distinctive spaghetti made for and by Filipinos. Good for 2 servings. </h3>
+						<br>
+						<h2> P149 </h2>
+						<br>
+						<button class="foodButton" onclick="addToCart()">Order</button>
+					</div>
+				</div>
+			</div>
+			<br><br>
+			
+			<div class="availableFoods">
+				<h3> Lasagna </h3> <br>
+				<div class="foodContent2">
+					<img src="images/lasagna.png" class="foodPictures">
+					<div class="foodContent">
+						<h3> Meaty and cheesy lasagna that will surely fill your stomach. Perfect meal for 2 people. </h3>
+						<br>
+						<h2> P149 </h2>
+						<br>
+						<button class="foodButton" onclick="addToCart()">Order</button>
+					</div>
+				</div>
+			</div>
+			<br><br>
+			
+			<h3> Side Dish </h3>
+			<br><br>
+			
+			<div class="availableFoods">
+				<h3> French Fries </h3> <br>
+				<div class="foodContent2">
+					<img src="images/frenchFries.png" class="foodPictures">
+					<div class="foodContent">
+						<h3> Delicious french fries, perfect for snacks of 1 person. </h3>
+						<br>
+						<h2> P59 </h2>
+						<br>
+						<button class="foodButton" onclick="addToCart()">Order</button>
+					</div>
+				</div>
+			</div>
+			<br><br>
+			
+			<div class="availableFoods">
+				<h3> Nuggets </h3> <br>
+				<div class="foodContent2">
+					<img src="images/chickenNuggets.png" class="foodPictures">
+					<div class="foodContent">
+						<h3> 10 piece chicken nuggets, good for a light meal of 1 person. </h3>
+						<br>
+						<h2> P119 </h2>
+						<br>
+						<button class="foodButton" onclick="addToCart()">Order</button>
+					</div>
+				</div>
+			</div>
+			<br><br>
+			
+			<h3> Dessert </h3>
+			<br><br>
+
+			<div class="availableFoods">
+				<h3> Sundae </h3> <br>
+				<div class="foodContent2">
+					<img src="images/sundae.png" class="foodPictures">
+					<div class="foodContent">
+						<h3> Cold sundae to complete your meal. Good for 1 person. </h3>
+						<br>
+						<h2> P99 </h2>
+						<br>
+						<button class="foodButton" onclick="addToCart()">Order</button>
+					</div>
+				</div>
+			</div>
+			<br><br>
+			
+			<div class="availableFoods">
+				<h3> Halo-halo </h3> <br>
+				<div class="foodContent2">
+					<img src="images/haloHalo.png" class="foodPictures">
+					<div class="foodContent">
+						<h3> A cold mixture of sweets. A perfect conclusion to your meal. 
+							<br> Good for 1 person.
+						</h3>
+						<br>
+						<h2> P129 </h2>
+						<br>
+						<button class="foodButton" onclick="addToCart()">Order</button>
+					</div>
+				</div>
+			</div>
+			<br><br>
+			
+			<h3> Drinks </h3>
+			<br><br>
+			
+			<div class="availableFoods">
+				<h3> Coca-Cola </h3> <br>
+				<div class="foodContent2">
+					<img src="images/cocaCola.png" class="foodPictures">
+					<div class="foodContent">
+						<h3> Coca-Cola soda to match with your meal (or to drink by itself if you want). </h3>
+						<br>
+						<h2> P29 </h2>
+						<br>
+						<button class="foodButton" onclick="addToCart()">Order</button>
+					</div>
+				</div>
+			</div>
+			<br><br>
+			
+			<div class="availableFoods">
+				<h3> Water </h3> <br>
+				<div class="foodContent2">
+					<img src="images/water.png" class="foodPictures">
+					<div class="foodContent">
+						<h3> Refreshing water to quench your thirst, may be served with ice. </h3>
+						<br>
+						<h2> P19 </h2>
+						<br>
+						<button class="foodButton" onclick="addToCart()">Order</button>
+					</div>
+				</div>
+			</div>
+			<br><br>
+		</div>
+		<br><br>
+		
+		<script src="js/jsOrderPage.js"></script>
+	</body>
+</html>
