@@ -1,0 +1,650 @@
+* {
+	margin: 0px;
+	cursor: url("../images/charlesCursor.ico"), default;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #FCDC94;
+	font-family: "League Spartan", sans-serif;
+}
+
+/* scrollbar */
+body::-webkit-scrollbar {
+	width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+	background: #01005E;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: #28518A;
+	border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+	background: #17B794; 
+}
+
+/* header */
+.sticky {
+	position: sticky;
+	top: 0;
+}
+
+#myHeader {
+	background-color: #FFEA00;
+	color: #000000;
+	box-shadow: 3px 3px 5px rgba (0, 0, 0, 0.1);
+	padding: 10px 16px;
+	position: sticky;
+	z-index: 999;
+}
+
+.header {
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 50px;
+}
+
+#headerLogo {
+	margin-right: auto;
+	line-height: 1.2;
+}
+
+/* header buttons */
+.navigationButtons {
+	height: 100%;
+	padding: 0 30px;
+	text-decoration: none;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
+	font-size: 16px;
+	transition-duration: 0.3s;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	position: relative;
+	color: #301934;
+}
+
+.navigationButtons:hover {
+	color: #FFEA00;
+	background-color: #301934;
+}
+
+/* content */
+#basicInformation1 {
+	background-color: #435055;
+	border-radius: 10px;
+	margin: auto;
+	margin-top: 15px;
+	padding: 10px;
+	font-family: "Montserrat", sans-serif;
+	width: fit-content;
+}
+
+#basicInformationDecoration {
+	background-color: #FCDC94;
+	border-radius: 10px;
+	width: 50px;
+	padding: 6px;
+	margin: auto;
+}
+
+#basicInformation2 {
+	background-color: #27323A;
+	border-radius: 10px;
+	margin: 20px;
+	margin-top: 10px;
+	padding: 20px;
+}
+
+#basicInformation3 {
+	display: flex;
+	gap: 30px;
+}
+
+/* picture */
+#profilePicture {
+	background-color: #29A19C;
+	border-radius: 10px;
+	padding: 30px;
+	padding-top: 70px;
+	width: fit-content;
+	margin-left: auto;
+}
+
+#myPicture {
+	width: 250px;
+	border-radius: 50%;
+}
+
+#profileName {
+	background-color: #A3F7BF;
+	font-size: 20px;
+	padding: 5px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+#socialsLogos1 {
+	display: flex;
+}
+
+#socialsLogos2 {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.socialsLogoPictures {
+	width: 30px;
+	margin: 5px;
+	cursor: pointer;
+}
+
+/* projects */
+#projects {
+	background-color: #29A19C;
+	border-radius: 10px;
+	padding: 10px;
+	margin-right: auto;
+}
+
+#myProjectsTitle {
+	text-align: center;
+	background-color: #A3F7BF;
+	border-radius: 10px;
+}
+
+.projectsImage {
+	width: 700px;
+	border-radius: 10px;
+	transition: transform .2s;
+}
+
+.projectsImage:hover {
+	transform: scale(115%);
+	cursor: pointer;
+}
+
+/* project slideshow */
+.projectSlides {
+	display: none
+}
+
+.slideshow-container {
+	position: relative;
+}
+
+/* project buttons */
+#projectsAndButtonsContainer {
+	display: flex;
+	align-items: center;
+}
+
+.previousButton, .nextButton {
+	cursor: pointer;
+	width: auto;
+	position: absolute;
+	padding: 16px;
+	color: #000000;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 10px;
+	user-select: none;
+}
+
+.nextButton {
+	right: 0;
+	border-radius: 10px;
+}
+
+.previousButton:hover, .nextButton:hover {
+	background-color: rgba(0,0,0,0.8);
+	color: #29A19C;
+}
+
+/* project caption */
+.projectText {
+	padding: 5px;
+	color: #000000;
+	font-size: 15px;
+	text-align: center;
+}
+
+.numberOfSlides {
+	color: #00000;
+	font-size: 15px;
+	padding: 8px 12px;
+}
+
+/* project dot indicators */
+.projectDot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.3s;
+}
+
+.activeDot {
+	background-color: #000000;
+}
+
+.activeDot:hover, .projectDot:hover {
+	background-color: #A3F7BF;
+}
+
+/* about me (summary) */
+#aboutMe {
+	background-color: #29A19C;
+	border-radius: 10px;
+	padding: 10px;
+	transition: transform .2s;
+}
+
+#aboutMe:hover {
+	transform: scale(115%);
+	cursor: pointer;
+}
+
+#aboutMeTitle {
+	background-color: #A3F7BF;
+	border-radius: 10px;
+	padding: 10px;
+	padding-left: 15px;
+}
+
+.infoColor1 {
+	font-size: 15px;
+	color: #A3F7BF;
+}
+
+#infoSummary {
+	padding: 10px;
+	line-height: 1.5;
+}
+
+/* about me section */
+#aboutMeSection {
+	background-color: #FFF5E0;
+	border-radius: 10px;
+	padding: 20px;
+	color: #1A4D2E;
+	font-size: 18px;
+	line-height: 1.2;
+	scroll-margin-top: 80px;
+	width: auto;
+	max-width: 1150px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.aboutDecoration1 {
+	background-color: #8DECB4;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+.aboutDecoration2 {
+	background-color: #41B06E;
+	display: flex;
+	border-radius: 10px;
+	padding: 20px;
+	gap: 50px;
+}
+
+.aboutDecoration3 {
+	background-color: #FFF5E0;
+	border-radius: 10px;
+	padding: 20px;
+	width: 100%;
+	height: 100%;
+	margin-top: auto;
+	margin-bottom: auto;
+	font-size: 20px;
+}
+
+.aboutSectionImage {
+	border-radius: 10px;
+	height: 350px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#aboutMeSummary{
+	height: 500px;
+	overflow-y: scroll;
+}
+
+#aboutMeSummary::-webkit-scrollbar {
+	width: 12px;
+}
+
+#aboutMeSummary::-webkit-scrollbar-track {
+	background: #41B06E;
+	border-radius: 10px;
+}
+
+#aboutMeSummary::-webkit-scrollbar-thumb {
+	background: #1A4D2E;
+	border-radius: 5px;
+}
+
+#aboutMeSummary::-webkit-scrollbar-thumb:hover {
+	background: #141E46; 
+}
+
+.infoColor2 {
+	font-weight: bold;
+	color: #141E46;
+}
+
+.infoColor3 {
+	color: #141E46;
+}
+
+/* skills */
+#mySkills {
+	display: flex;
+	gap: 50px;
+	text-align: center;
+	width: fit-content;
+}
+
+.skillsLogos {
+	height: 100px;
+	gap: 50px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#webLanguage, #programmingLanguage {
+	background-color: #1A4D2E;
+	border-radius: 10px;
+	padding: 30px;
+	width: fit-content;
+	display: flex;
+	gap: 50px;
+	color: #8DECB4;
+}
+
+#webLanguage {
+	margin-left: auto;
+}
+
+#programmingLanguage {
+	margin-right: auto;
+}
+
+.verticalLine {
+	border-left: 2px solid #8DECB4;
+	height: 100px;
+}
+
+/* projects section */
+#projectsSection {
+	scroll-margin-top: 80px;
+}
+
+#projectsOuterDecoration {
+	background-color: #1A120B;
+	border-radius: 10px;
+	padding: 20px;
+	height: 800px;
+	width: fit-content;
+	overflow-y: scroll;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* scrollbar */
+#projectsOuterDecoration::-webkit-scrollbar {
+	width: 12px;
+}
+
+#projectsOuterDecoration::-webkit-scrollbar-track {
+	background: #3C2A21;
+	border-radius: 10px;
+}
+
+#projectsOuterDecoration::-webkit-scrollbar-thumb {
+	background: #D5CEA3;
+	border-radius: 5px;
+}
+
+#projectsOuterDecoration::-webkit-scrollbar-thumb:hover {
+	background: #E5E5CB; 
+}
+
+.projectsDecoration1, .projectsDecoration2 {
+	background-color: #3C2A21;
+	border-radius: 10px;
+	padding: 20px;
+	color: #D5CEA3;
+	font-size: 18px;
+	scroll-margin-top: 80px;
+}
+
+.projectsDecoration2 {
+	width: fit-content;
+	margin-right: auto;
+	margin-left: auto;
+	align-items: center;
+}
+
+.projectsSectionImage {
+	border-radius: 10px;
+	width: 600px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.projectInfo1 {
+	color:  #3C2A21;
+}
+
+.projectInfo2 {
+	background-color: #D5CEA3;
+	border-radius: 10px;
+	padding: 20px;
+	color:  #1A120B;
+	width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.projectsIframe {
+	display: block;
+	border-radius: 10px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.projectLinks:link, .projectLinks:visited {
+	color: #3C5B6F;
+	text-decoration: none;
+}
+
+.projectLinks:hover {
+	text-decoration: underline;
+}
+
+.projectLinks:active {
+	color: #1A120B;
+}
+
+/* Certificates earned */
+#certificatesSection{
+	scroll-margin-top: 80px;
+}
+
+#certificatesOuterDecoration {
+	background-color: #DBB5B5;
+	border-radius: 10px;
+	padding: 20px;
+	color: #F1E5D1;
+	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 800px;
+	overflow-y: scroll;
+}
+
+/* scrollbar */
+#certificatesOuterDecoration::-webkit-scrollbar {
+	width: 12px;
+}
+
+#certificatesOuterDecoration::-webkit-scrollbar-track {
+	background: #987070;
+	border-radius: 10px;
+}
+
+#certificatesOuterDecoration::-webkit-scrollbar-thumb {
+	background: #C39898;
+	border-radius: 5px;
+}
+
+#certificatesOuterDecoration::-webkit-scrollbar-thumb:hover {
+	background: #F1E5D1; 
+}
+
+#certificatesDecoration1 {
+	background-color: #C39898;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+.certificatesDecoration2 {
+	background-color: #987070;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+.certificatesContent1 {
+	font-size: 20px;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	line-height: 1.2;
+}
+
+.certificatesContent2 {
+	font-size: 20px;
+	text-align: left;
+	margin-right: auto;
+	margin-left: auto;
+	line-height: 1.2;
+}
+
+.certificatesSectionImage {
+	border-radius: 10px;
+	width: 600px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#contactDecoration4 {
+	background-color: #468585;
+	padding: 2.5px;
+	border-radius: 2px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.certificateLinks:link, .certificateLinks:visited {
+	color: #FFF078;
+	text-decoration: none;
+}
+
+.certificateLinks:hover {
+	text-decoration: underline;
+}
+
+.certificateLinks:active {
+	color: #F1E5D1;
+}
+
+/* Contact Section */
+
+#contactSection {
+	background-color: #C8CFA0;
+	padding-top: 20px;
+	width: 100%;
+}
+
+#contactDecoration1 {
+	background-color: #78ABA8;
+	padding: 20px;
+}
+
+#contactDecoration2 {
+	background-color: #9CDBA6;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 30px;
+}
+
+#contactDecoration3 {
+	background-color: #DEF9C4;
+	border-radius: 10px;
+	padding: 50px;
+	margin: 10px;
+	color: #468585;
+}
+
+#contactDetails {
+	margin-right: 50px;
+	margin-left: 50px;
+	font-size: 20px;
+	display: flex;
+}
+
+#contactDetails1, #contactDetails2 {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
+	display: flex;
+}
+
+#contactDetails1Description, #contactDetails1Username, #contactDetails2Description, #contactDetails2Username {
+	padding: 20px;
+}
+
+#contactDecoration4 {
+	background-color: #468585;
+	padding: 2.5px;
+	border-radius: 2px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.contactLinks:link, .contactLinks:visited {
+	color: #50B498;
+	text-decoration: none;
+}
+
+.contactLinks:hover {
+	text-decoration: underline;
+}
+
+.contactLinks:active {
+	color: #468585;
+}
