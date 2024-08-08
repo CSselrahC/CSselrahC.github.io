@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Charles S. Carreon</title>
+		<link rel="stylesheet" href="css/portfolio.css">
+		<link rel="icon" href="images/charlesLogo.ico">
+		<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div id="myHeader">
+			<nav class="header">
+				<div id="headerLogo" onclick="topScroll()">
+					<h1 style="cursor: pointer;"> Charles S. Carreon </h1>
+					<h3 style="cursor: pointer;"> BSCS Student </h3>
+				</div>
+				<a class="navigationButtons" href="#aboutMeSection">About Me</a>
+				<a class="navigationButtons" href="#Experiences">Experience</a>
+				<a class="navigationButtons" href="#projectsSection">Projects</a>
+				<a class="navigationButtons" href="#certificatesSection">Certificates</a>
+			</nav>
+		</div>
+		
+		<div id="basicInformation1">
+			<div id="basicInformationDecoration"></div>
+			<div id="basicInformation2">
+				<div id="basicInformation3">
+					<div id="profilePicture">
+						<img src="images/charles.png" id="myPicture">
+						<br><br>
+						<div id="profileName"> 
+							<p> Hi! My Name is <br>
+							<span style="font-size: 48px; font-weight: bold;">Charles</span>.
+							</p>
+						</div>
+						<br>
+						<div id="socialsLogos1">
+							<div id="socialsLogos2">
+								<a href="https://www.facebook.com/csharlec" title="Charles Serrano Carreon" target="_blank"><img src="images/facebookLogoLight.png" class="socialsLogoPictures"></a>
+								<a href="https://www.instagram.com/csharlec" title="Charles Carreon" target="_blank"><img src="images/instagramLogoLight.png" class="socialsLogoPictures"></a>
+								<a href="https://www.linkedin.com/in/charlesscarreon" title="Charles Carreon" target="_blank"><img src="images/linkedinLogoLight.png" class="socialsLogoPictures"></a>
+								<a href="https://github.com/CSselrahC" title="Charles C" target="_blank"><img src="images/githubLogoLight.png" class="socialsLogoPictures"></a>
+								<a href="mailto:charlesserranocarreon@gmail.com" title="Charles Carreon" target="_blank"><img src="images/emailLogoLight.png" class="socialsLogoPictures"></a>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div id="projects">
+						<h2 id="myProjectsTitle"> My Projects </h2>
+						<div class="slideshow-container">
+							<div id="projectsAndButtonsContainer">
+								<div class="projectSlides">
+									<div class="numberOfSlides">1 / 5</div>
+									<img src="images/proj01.png" class="projectsImage" onclick="projectsScroll()">
+									<div class="projectText">JMusicPlayer</div>
+								</div>
+								
+								<div class="projectSlides">
+									<div class="numberOfSlides">2 / 5</div>
+									<img src="images/proj02.png" class="projectsImage" onclick="projectsScroll()">
+									<div class="projectText">Rockat's Adventure</div>
+								</div>
+								
+								<div class="projectSlides">
+									<div class="numberOfSlides">3 / 5</div>
+									<img src="images/proj03.png" class="projectsImage" onclick="projectsScroll()">
+									<div class="projectText">Catching Game</div>
+								</div>
+								
+								<div class="projectSlides">
+									<div class="numberOfSlides">4 / 5</div>
+									<img src="images/proj04.png" class="projectsImage" onclick="projectsScroll()">
+									<div class="projectText">Portfolio</div>
+								</div>
+								
+								<div class="projectSlides">
+									<div class="numberOfSlides">5 / 5</div>
+									<img src="images/proj05.png" class="projectsImage" onclick="projectsScroll()">
+									<div class="projectText">Suggestion Box</div>
+								</div>
+								
+								<a class="previousButton" onclick="plusSlides(-1)"> < </a>
+								<a class="nextButton" onclick="plusSlides(1)"> > </a>
+							</div>
+							<div style="text-align:center">
+								<span class="projectDot" onclick="currentSlide(1)"></span>
+								<span class="projectDot" onclick="currentSlide(2)"></span>
+								<span class="projectDot" onclick="currentSlide(3)"></span>
+								<span class="projectDot" onclick="currentSlide(4)"></span>
+								<span class="projectDot" onclick="currentSlide(5)"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div id="aboutMe" onclick="aboutMeScroll()">
+					<h2 id="aboutMeTitle"> About Me </h2>
+					<div id="infoSummary">
+						<p> <span class="infoColor1"> Full Name: </span> Charles Serrano Carreon </p>
+						<p> <span class="infoColor1"> Nickname: </span> Charles </p>
+						<p> <span class="infoColor1"> Age: </span> <span id="myAge1"> 0 </span> </p>
+						<p> <span class="infoColor1"> Sex: </span> Male </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<br><br><br>
+		
+		<div id="aboutMeSection">
+			<div class="aboutDecoration1">
+				<h1> About Me </h1>
+			</div> <br>
+			<div class="aboutDecoration1">
+				<p> Hi! I am Charles S. Carreon.
+					I hope to be a Game Developer someday.
+					I am currently a college student under Computer Science.
+					I like computers after all.
+				</p> <br>
+				<p> I like programming, and I also like to collaborate with my peers
+					to increase my teamworking skills and also to learn from them.
+				</p> <br>
+				<p> I don't just learn from my school and my peers,
+					I also learn from other professionals of the tech field.
+					I learn from them by listening to their seminars,
+					that is why I like to attend this kind of events.
+				</p> <br>
+				<p> I spend my time by learning, and also building
+					projects. I've built personal projects to help
+					myself increase my skills and experience. These
+					personal projects are also meant to showcase my
+					knowledge. But the most important reason I built
+					these projects is just to have fun. I think that
+					it is important to have fun in life, and one of my
+					hobbies is to create software projects that will
+					help me increase my skill.
+				</p> <br>
+				<p> But it's not like my life is all about technology.
+					As I stated above, I also value fun in my life, that is why
+					I also participate in things that give me joy in life.
+				</p>
+			</div> <br>
+			<div class="aboutDecoration1">
+				<h2> Things to know about me: </h2>
+				<p> <span class="infoColor2"> Full Name: </span> Charles Serrano Carreon </p>
+				<p> <span class="infoColor2"> Nickname: </span> Charles </p>
+				<p> <span class="infoColor2"> Birthday: </span> September 6, 2004 </p>
+				<p> <span class="infoColor2"> Age: </span> <span id="myAge2"> 0 </span> </p>
+				<p> <span class="infoColor2"> Sex: </span> Male </p>
+				<p> <span class="infoColor2"> Address: </span> Centennial Homes, Pulo, Cabuyao City, Laguna, The Philippines, Earth </p>
+				<p> <span class="infoColor2"> Contact Number: </span> 09192781344 </p>
+			</div> <br>
+			<div class="aboutDecoration1">
+				<h2> My Hobbies: </h2>
+				<ul>
+					<li> Eating </li>
+					<li> Sleeping </li>
+					<li> Surfing the Web </li>
+					<li> Listening to Music </li>
+					<li> Playing Games </li>
+					<li> Watching Anime </li>
+					<li> Watching Tokusatsu Shows </li>
+					<li> Reading Manga, Manhwa, Manhua </li>
+				</ul>
+			</div> <br>
+			<div class="aboutDecoration1">
+				<h1 id="Experiences" style="scroll-margin-top: 100px;"> Experiences </h1>
+				<p class="infoColor2"> Education: </p>
+				<p> Tertiary Education: </p>
+				<p> Pamantasan ng Cabuyao (Present) <span class="infoColor3">- Bachelor of Science in Computer Science </span></p>
+				<br>
+				<p> Secondary Education: </p>
+				<p> <span class="infoColor3"> Senior High School:</span> Pamantasan ng Cabuyao (2023) </p>
+				<p> <span class="infoColor3"> Junior High School:</span> Pulo National High School (2021) </p>
+				<br>
+				<p> Primary Education: </p>
+				<p> Pulo Elemantary School (2017) </p>
+			</div> <br>
+			<div class="aboutDecoration1">
+				<h1> Skills </h1>
+				<div id="mySkills">
+					<div id="webLanguage">
+						<div>
+							<img src="images/htmlLogo.svg" class="skillsLogos">
+							<p> HyperText Markup Language </p>
+						</div>
+						<div class="verticalLine"></div>
+						<div>
+							<img src="images/cssLogo.svg" class="skillsLogos">
+							<p> Cascading Style Sheets </p>
+						</div>
+						<div class="verticalLine"></div>
+						<div>
+							<img src="images/javaScriptLogo.png" class="skillsLogos">
+							<p> JavaScript </p>
+						</div>
+					</div>
+					<div id="programmingLanguage">
+						<div>
+							<img src="images/javaLogo.png" class="skillsLogos">
+							<p> Java </p>
+						</div>
+						<div class="verticalLine"></div>
+						<div>
+							<img src="images/pythonLogo.png" class="skillsLogos">
+							<p> Python </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<br><br><br>
+		
+		<div id="projectsSection">
+			<div id="projectsOuterDecoration">
+				<div class="projectsDecoration1">
+					<h1> Projects </h1>
+				</div> <br>
+				<h1 class="projectInfo1"> Java </h1>
+				<div class="projectsDecoration2">
+					<img src="images/proj01.png" class="projectsSectionImage"> <br>
+					<div class="projectInfo2">
+						<h2> JMusicPlayer </h2>
+						<p> JMusicPlayer is a music player that can play WAV files. It is a collaboration between me and 
+							<a class="projectLinks" href="https://kurtjoshua.github.io/portfolio" title="Kurt Joshua Cayaga" target="_blank">Kurt Joshua Cayaga</a>
+							and it uses Java Swing. <br><br>
+							<a class="projectLinks" href="https://github.com/CSselrahC/JMusicPlayer" title="JMusicPlayer" target="_blank">Project</a> <br>
+							<a class="projectLinks" href="https://www.facebook.com/csharlec/videos/2193928587632408" title="JMusicPlayer Video" target="_blank">Video Presentation</a>
+						</p>
+					</div>
+				</div> <br>
+				<h1 class="projectInfo1"> Scratch </h1>
+				<div class="projectsDecoration2">
+					<iframe class="projectsIframe" src="https://scratch.mit.edu/projects/999094164/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe> <br>
+					<div class="projectInfo2">
+						<h2> Rockat's Adventure </h2>
+						<p> This is an example of an animation created using Scratch. <br><br>
+							<a class="projectLinks" href="https://scratch.mit.edu/projects/999094164" title="Rockat's Adventure" target="_blank">Project</a>
+						</p>
+					</div>
+				</div> <br>
+				<div class="projectsDecoration2">
+					<iframe class="projectsIframe" src="https://scratch.mit.edu/projects/1006137077/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe> <br>
+					<div class="projectInfo2">
+						<h2> Catching Game </h2>
+						<p> This is an example of a game created using Scratch. <br><br>
+							<a class="projectLinks" href="https://scratch.mit.edu/projects/1006137077" title="Catching Game" target="_blank">Project</a>
+						</p>
+					</div>
+				</div> <br>
+				<h1 class="projectInfo1"> HTML </h1>
+				<div class="projectsDecoration2">
+					<img src="images/proj04.png" class="projectsSectionImage"> <br>
+					<div class="projectInfo2">
+						<h2> Portfolio </h2>
+						<p> This website acts as my portfolio, where you can see my various experiences and projects.</p>
+					</div>
+				</div> <br>
+				<div class="projectsDecoration2">
+					<img src="images/proj05.png" class="projectsSectionImage"> <br>
+					<div class="projectInfo2">
+						<h2> Suggestion Box </h2>
+						<p> A website where you can submit your siggestions. My first ever project (aside from my old website portfolio). <br><br>
+							<a class="projectLinks" href="https://csselrahc.github.io/suggestionBox.html" title="Suggestion Box" target="_blank">Project</a>
+						</p>
+					</div>
+				</div> <br>
+				<h1 class="projectInfo1"> Others </h1>
+				<div class="projectsDecoration2">
+					<img src="images/proj06.png" class="projectsSectionImage"> <br>
+					<div class="projectInfo2">
+						<h2> ScriptSprouts Video </h2>
+						<p> I was part of the teaching comittee of ScriptSprouts, a group that aims to introduce young 
+						kids to programming. In the video above, I gave an introduction for Scratch programming language. <br><br>
+							<a class="projectLinks" href="https://www.facebook.com/share/v/pkWcbox1Jz4gLPAE" title="ScriptSprouts Video" target="_blank">Video Presentation</a> <br>
+							<a class="projectLinks" href="https://www.facebook.com/share/p/v5MCHJzd2QX7zLVv" title="ScriptSprouts Members" target="_blank">Team Members list</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<br><br><br>
+		
+		<div id="certificatesSection">
+			<div id="certificatesOuterDecoration">
+				<div id="certificatesDecoration1">
+					<div class="certificatesDecoration2">
+						<h1> Certificates </h1>
+					</div> <br>
+					<div class="certificatesDecoration2">
+						<div class="certificatesContent1">
+							<img src="images/cert01.png" class="certificatesSectionImage"> <br>
+							<p>
+								<h2> EF SET English Certificate 73/100 (C2 Proficient) </h2>
+								<h3> EF Standard English Test (EF SET) </h3>
+								<p> Issued on 2024 July 12 </p>
+								<a class="certificateLinks" href="https://cert.efset.org/r9hm2w" title="EF SET Certificate" target="_blank"> Show credential </a>
+							</p>
+						</div>
+					</div> <br>
+					<div class="certificatesDecoration2">
+						<div class="certificatesContent1">
+							<img src="images/cert02.png" class="certificatesSectionImage"> <br>
+							<p>
+								<h2> Programming for Beginners Using Python </h2>
+								<h3> Department of Information and Communications Technology </h3>
+								<p> Issued on 2024 July 15 </p>
+								<p> Skill acquired: Python </p>
+								<a class="certificateLinks" href="https://courses.buri.io/view/user/certificate/d388ef03-62b6-4aa3-8420-b3363871e914/pdf" title="Python Certificate" target="_blank"> Show credential </a>
+							</p>
+						</div>
+					</div> <br>
+					<div class="certificatesDecoration2">
+						<div class="certificatesContent1">
+							<img src="images/cert03.png" class="certificatesSectionImage"> <br>
+							<p>
+								<h2> DICT-WD001 Principles of Web Development and Introduction to HTML </h2>
+								<h3> Department of Information and Communications Technology </h3>
+								<p> Issued on 2024 July 18 </p>
+								<p> Skill acquired: Web Development </p>
+								<a class="certificateLinks" href="https://courses.buri.io/view/user/certificate/d388ef03-62b6-4aa3-8420-b3363871e914/pdf" title="DICT-WD001 Certificate" target="_blank"> Show credential </a>
+							</p>
+						</div>
+					</div> <br>
+				</div>
+			</div>
+		</div>
+		
+		<br><br><br>
+		
+		<div id="contactSection">
+			<br><br>
+			<div id="contactDecoration1">
+				<div id="contactDecoration2">
+					<div id="contactDecoration3">
+						<h1> Contact Me </h1> <br>
+						<div id="contactDetails">
+							<div id="contactDetails1">
+								<div id="contactDetails1Description">
+									<p> Facebook: </p>
+									<p> Instagram: </p>
+									<p> LinkedIn: </p>
+								</div>
+								<div id="contactDetails1Username">
+									<a class="contactLinks" href="https://www.facebook.com/csharlec" title="Charles Serrano Carreon" target="_blank">https://www.facebook.com/csharlec</a><br>
+									<a class="contactLinks" href="https://www.instagram.com/csharlec" title="Charles Carreon" target="_blank">https://www.instagram.com/csharlec</a><br>
+									<a class="contactLinks" href="https://www.linkedin.com/in/charlesscarreon" title="Charles Carreon" target="_blank">https://www.linkedin.com/in/charlesscarreon</a>
+								</div>
+							</div>
+							<div id="contactDecoration4"></div>
+							<div id="contactDetails2">
+								<div id="contactDetails2Description">
+									<p> Github: </p>
+									<p> Email Address: </p>
+								</div>
+								<div id="contactDetails2Username">
+									<a class="contactLinks" href="https://github.com/CSselrahC" title="Charles C" target="_blank">https://github.com/CSselrahC</a><br>
+									<a class="contactLinks" href="mailto:charlesserranocarreon@gmail.com" title="Charles Carreon" target="_blank">charlesserranocarreon@gmail.com</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="js/portfolio.js"></script>
+	</body>
+</html>	
